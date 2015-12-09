@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e3f2fd">
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_image"
+        android:maxWidth="75px"
+        android:maxHeight="75px"
+        android:minHeight="75px"
+        android:minWidth="75px" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/row_title"
+            android:paddingTop="3dp"
+            android:paddingStart="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#607d8b"
+            android:maxLines="1" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:weightSum="100"
+            android:id="@+id/linearLayout1"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/row_blurb"
+                android:paddingStart="12dp"
+                android:paddingBottom="5dp"
+                android:textColor="#263238"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="80"
+                android:maxLines="3" />
+            <CheckBox
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:id="@+id/checkBox1" />
+            <TextView
+                android:id="@+id/row_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="19"
+                android:hint="Date Created"
+                android:textColor="#515a5f"
+                android:gravity="right"
+                android:paddingEnd="5dp"
+                android:textSize="48px" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

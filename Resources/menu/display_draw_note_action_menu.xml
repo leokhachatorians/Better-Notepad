@@ -1,0 +1,9 @@
+﻿<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:myapp="http://schemas.android.com/apk/res-auto">
+
+  <item android:id="@+id/action_display_draw_delete"
+      android:icon="@drawable/trash2"
+      android:title="Delete"
+      myapp:showAsAction="always"/>
+
+</menu>

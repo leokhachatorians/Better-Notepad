@@ -1,0 +1,25 @@
+﻿<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:myapp="http://schemas.android.com/apk/res-auto">
+
+
+  <item android:id="@+id/action_draw_erase"
+        android:icon="@drawable/eraser"
+        android:title="Erase"
+        myapp:showAsAction="always"/>
+
+  <item android:id="@+id/action_draw_save"
+        android:icon="@drawable/save"
+        android:title="Save"
+        myapp:showAsAction="always"/>
+  
+    <item android:id="@+id/action_draw_settings"
+          android:icon="@drawable/settings"
+          android:title="Settings"
+          android:showAsAction="ifRoom">
+      <menu>
+        
+      </menu>
+      </item>
+  
+  
+</menu>

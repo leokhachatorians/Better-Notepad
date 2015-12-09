@@ -1,0 +1,24 @@
+﻿<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:myapp="http://schemas.android.com/apk/res-auto">
+
+  <!---->item android:id="@+id/action_undo"
+  android:icon="@drawable/ic_action_undo"
+  android:title="Undo"
+  myapp:showAsAction="never"/-->
+
+  <!---->item android:id="@+id/action_trash"
+     android:icon="@drawable/trash"
+     android:title="Delete"
+     myapp:showAsAction="always"/-->
+     
+     <item android:id="@+id/action_settings"
+       android:icon="@drawable/brush"
+       android:title="Draw A Note"
+       myapp:showAsAction="always"/>
+       
+   <item android:id="@+id/action_add"
+      android:icon="@drawable/pencil"
+      android:title="Add"
+      myapp:showAsAction="always"/>
+
+</menu>

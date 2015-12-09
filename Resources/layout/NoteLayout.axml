@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/note_toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/noteLinearLayout"
+        android:weightSum="100"
+        android:background="#e3f2fd">
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/note_title"
+            android:hint="Title"
+            android:textColorHint="#607d8b"
+            android:textColor="#263238"
+            android:maxLines="1"
+            android:singleLine="true" />
+        <EditText
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="98"
+            android:id="@+id/note_body"
+            android:hint="Note"
+            android:gravity="start"
+            android:textColorHint="#607d8b"
+            android:textColor="#263238" />
+    </LinearLayout>
+</LinearLayout>
